@@ -30,7 +30,7 @@ chassis_model.metadata.model_name = "User-Based CF Movie Recommendations"
 chassis_model.metadata.model_version = "0.0.1"
 chassis_model.metadata.add_input(
     key="input",
-    accepted_media_types=["text/plain"],
+    accepted_media_types=["application/json"],
     max_size="10M",
     description="User ID as a string"
 )
