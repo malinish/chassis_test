@@ -8,7 +8,7 @@ status = await client.status()
 print(f"Status: {status}")
 
 # Submit inference with quickstart sample data
-res = await client.run("22133")
+res = await client.run([{"input": "22133"}])
 
 # Parse results from output item
 result = res.outputs[0].output["results.json"]
